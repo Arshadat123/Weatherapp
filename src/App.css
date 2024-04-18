@@ -1,0 +1,122 @@
+#root {
+  
+  margin: 0 auto;
+  text-align: center;
+  
+}
+/* App.css */
+.weather-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg');
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.weather-card {
+  width: 300px;
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-heading {
+  margin: 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+.weather-input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.weather-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.weather-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather-button:hover {
+  background-color: #0056b3;
+}
+
+.weather-error {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.weather-city {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.weather-temp {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-description {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .weather-container {
+    height: 100vh;
+    width: 100vw;
+  }
+  .weather-card {
+    width: 90%;
+  }
+
+  .weather-temp {
+    font-size: 36px;
+  }
+
+  .weather-city,
+  .weather-description {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
