@@ -1,0 +1,178 @@
+
+#root {
+  
+  margin: 0 auto;
+  text-align: center;
+ 
+  
+}
+.loading-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg');
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  
+}
+
+.loading-heading {
+  margin: 0;
+  font-size: 44px;
+  text-align: center;
+}
+
+.loading-text {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.loading-animation {
+  padding-top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rect-1,
+.rect-2,
+.rect-3,
+.rect-4,
+.rect-5,
+.rect-6 {
+  width: 20px;
+  height: 60px;
+  margin: 0 5px;
+  background-color: #ccc;
+  animation: color-change 2s ease-in-out infinite;
+}
+
+.rect-1 {
+  animation-delay: 0.2s;
+}
+
+.rect-2 {
+  animation-delay: 0.4s;
+}
+
+.rect-3 {
+  animation-delay: 0.6s;
+}
+
+.rect-4 {
+  animation-delay: 0.8s;
+}
+
+.rect-5 {
+  animation-delay: 1s;
+}
+
+.rect-6 {
+  animation-delay: 1.2s;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #d9e0c6;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #3498db;
+    transform: scale(1.2);
+  }
+  75% {
+    background-color: #f85050;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: #4dd15e;
+    transform: scale(1);
+  }
+}
+
+/* Media queries for different screen sizes */
+
+@media screen and (max-width: 768px) {
+  .loading-container {
+    height: 100vh;
+  }
+  .loading-card {
+    height: 100vh;
+    width: auto;
+  }
+  .loading-heading {
+    font-size: 42px;
+  }
+
+  .loading-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .loading-animation {
+    padding-top: 20%;
+    margin-top: 30%;
+  }
+
+  .rect-1,
+  .rect-2,
+  .rect-3,
+  .rect-4,
+  .rect-5,
+  .rect-6 {
+    height: 60px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loading-container {
+    width: 90%;
+  }
+
+  .loading-card {
+    height: 100vh;
+    width: 100vw;
+  }
+  .loading-heading {
+    
+    font-size: 42px;
+  }
+  .loading-text {
+    font-size: 18px;
+  }
+
+  .loading-animation {
+    padding-top: 30%;
+  }
+
+  .rect-1,
+  .rect-2,
+  .rect-3,
+  .rect-4,
+  .rect-5,
+  .rect-6 {
+    height: 30px;
+    width: 10px;
+  }
+}
